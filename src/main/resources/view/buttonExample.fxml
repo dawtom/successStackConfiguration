@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<!--
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+		<TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<columns>
+				<TableColumn prefWidth="75.0" text="Date" />
+				<TableColumn prefWidth="75.0" text="Payee" />
+				<TableColumn prefWidth="75.0" text="Category" />
+				<TableColumn prefWidth="75.0" text="Inflow" />
+			</columns>
+		</TableView>
+
+
+	</center>
+</BorderPane>
+-->
+
+
+<GridPane fx:controller="examples.controller.FXMLExampleController"
+		  xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+	<padding><Insets top="100" right="100" bottom="100" left="100"/></padding>
+
+	<Text text="Welcome"
+		  GridPane.columnIndex="0" GridPane.rowIndex="0"
+		  GridPane.columnSpan="2"/>
+
+	<Label text="Student name"
+		   GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+	<TextField fx:id="studentName"
+			GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+	<Label text="Something funny:"
+		   GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+	<TextField fx:id="sthFunnyIdField"
+			   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+
+	<HBox spacing="10" alignment="bottom_right"
+		  GridPane.columnIndex="1" GridPane.rowIndex="4">
+		<Button text="Display it!"
+				onAction="#handleSubmitButtonAction"/>
+	</HBox>
+
+	<Text fx:id="actiontarget"
+		  GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+	<Button GridPane.columnIndex="3" GridPane.rowIndex="10"  text="Close" onAction="#closeApplication">
+	</Button>
+</GridPane>
+
+
