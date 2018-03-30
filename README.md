@@ -7,3 +7,5 @@ Jest tutaj postawiony cały stack z wyjątkiem MySQL.
 Działanie tego przykładu jest następujące: otwiera się okno z dwoma polami tekstowymi i przyciskiem "Display it", po kliknięciu przycisku wartości tych pól są odczytywane przez JavaFX i zapisywane do bazy przez Hibernate.
 
 Jeślibyście mieli problemy z konfiguracją to piszcie. Co prawda konfigurowałem to na Ubuntu, ale wydaje mi się, że te narzędzia są dość uniwersalne i nie będą zależały od systemu operacyjnego.
+
+Jak sklonujecie repo to Intellij powinien wykryć że to jest projekt Maven'owy i zaciągnąć wszystkie zależności.
