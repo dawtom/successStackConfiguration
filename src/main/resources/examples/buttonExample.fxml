@@ -56,7 +56,8 @@
 	<Text fx:id="actiontarget"
 		  GridPane.columnIndex="1" GridPane.rowIndex="6"/>
 
-	<Button GridPane.columnIndex="3" GridPane.rowIndex="10"  text="Close" onAction="#closeApplication">
+	<Button minWidth="150"
+			GridPane.columnIndex="3" GridPane.rowIndex="10"  text="Close" onAction="#closeApplication">
 	</Button>
 </GridPane>
 

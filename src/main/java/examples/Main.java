@@ -5,7 +5,6 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -30,8 +29,11 @@ public class Main extends Application {
 			// load layout from FXML file
 			FXMLLoader loader = new FXMLLoader();
 
+			final String dir = System.getProperty("user.dir");
+			System.out.println("current dir = " + dir);
+
 			// FIXME to be refactored: names of resources files should not be written in code, they should also be resources
-			loader.setLocation(Main.class.getResource("../view/buttonExample.fxml"));
+			loader.setLocation(Main.class.getResource("/examples/buttonExample.fxml"));
 			GridPane rootLayout = (GridPane) loader.load();
 
 			// add layout to a scene and show them all

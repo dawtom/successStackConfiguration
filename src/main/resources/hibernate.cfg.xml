@@ -30,7 +30,7 @@
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
         <property name="hibernate.id.new_generator_mappings">false</property>
 
-        <mapping class="examples.Student"/>
+        <mapping class="success.model.Student"/>
 
     </session-factory>
 </hibernate-configuration>
