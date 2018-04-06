@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -15,7 +16,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle("My first JavaFX app");
+		this.primaryStage.setTitle("SUCCESS");
 
 		initRootLayout();
 	}
@@ -33,8 +34,8 @@ public class Main extends Application {
 			System.out.println("current dir = " + dir);
 
 			// FIXME to be refactored: names of resources files should not be written in code, they should also be resources
-			loader.setLocation(Main.class.getResource("/examples/buttonExample.fxml"));
-			GridPane rootLayout = (GridPane) loader.load();
+			loader.setLocation(Main.class.getResource("/view/MainPanel.fxml"));
+			AnchorPane rootLayout = (AnchorPane) loader.load();
 
 			// add layout to a scene and show them all
 			Scene scene = new Scene(rootLayout);
